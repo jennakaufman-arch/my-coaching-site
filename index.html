@@ -23,7 +23,7 @@
     --sans: 'Instrument Sans', sans-serif;
   }
 
-  html { scroll-behavior: smooth; }
+  html { scroll-behavior: smooth; -webkit-overflow-scrolling: touch; }
 
   body {
     font-family: var(--sans);
@@ -550,10 +550,12 @@
 
   /* MOBILE */
   @media (max-width: 900px) {
-    nav { padding: 1rem 1.5rem; }
-    .nav-links { display: none; }
+    nav { padding: 1rem 1.5rem; flex-wrap: wrap; gap: 0.5rem; }
+    .nav-links { display: flex; flex-wrap: wrap; gap: 1rem; width: 100%; justify-content: center; }
+    .nav-links a { font-size: 0.75rem; }
+    .nav-cta { display: none; }
     .hero, .about, .contact { grid-template-columns: 1fr; gap: 3rem; }
-    .hero { padding: 6rem 1.5rem 3rem; }
+    .hero { padding: 8rem 1.5rem 3rem; }
     .hero::before { display: none; }
     section { padding: 4rem 1.5rem; }
     .clients-grid { grid-template-columns: 1fr; }

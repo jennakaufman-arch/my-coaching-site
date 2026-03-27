@@ -381,6 +381,44 @@
     color: rgba(255,255,255,0.5);
   }
 
+  /* CREDENTIALS */
+  .credentials {
+    background: var(--cream);
+    padding: 6rem 4rem;
+  }
+  .credentials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    margin-top: 3rem;
+  }
+  .credentials-group h3 {
+    font-size: 0.7rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1.2rem;
+  }
+  .credentials-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  .credentials-list li {
+    font-size: 0.92rem;
+    color: var(--ink-mid);
+    line-height: 1.5;
+    padding-left: 1rem;
+    border-left: 2px solid var(--gold-light);
+  }
+  .credentials-list li span {
+    display: block;
+    font-size: 0.78rem;
+    color: var(--ink-light);
+    margin-top: 0.2rem;
+  }
+
   /* TESTIMONIALS */
   .testimonials {
     background: var(--ink);
@@ -560,6 +598,7 @@
     section { padding: 4rem 1.5rem; }
     .clients-grid { grid-template-columns: 1fr; }
     .value-pillars { grid-template-columns: 1fr; }
+    .credentials-grid { grid-template-columns: 1fr; gap: 2rem; }
     .testimonials-grid,
     .testimonials-grid-bottom { grid-template-columns: 1fr; }
     footer { flex-direction: column; gap: 0.75rem; text-align: center; padding: 2rem 1.5rem; }
@@ -574,6 +613,7 @@
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#clients">Who I Work With</a></li>
+    <li><a href="#credentials">Background</a></li>
     <li><a href="#testimonials">Testimonials</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
@@ -584,6 +624,7 @@
 <section class="hero">
   <div class="hero-text">
     <p class="hero-eyebrow">Jenna Lask</p>
+    <p style="font-size:0.78rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink-light);margin-bottom:1.5rem;margin-top:-1rem;">Executive Coach</p>
     <h1 class="hero-title">Elevate your impact.<br><em>Deliver results.</em></h1>
     <p class="hero-body">I work with senior leaders and mid-level managers who want to elevate their performance in the corporate setting.</p>
     <div class="hero-actions">
@@ -626,7 +667,7 @@
       <div class="feature-icon">II</div>
       <div class="feature-text">
         <h4>Rapid Context</h4>
-        <p>20+ years in corporate environments means I get up to speed on your challenges fast, without hand-holding. Promotions, budget cycles, reorganizations, board presentations — I understand your challenges.</p>
+        <p>20+ years in corporate environments means I get up to speed on your challenges fast. Promotions, budget cycles, reorganizations, board presentations — I understand your challenges.</p>
       </div>
     </div>
     <div class="feature-item">
@@ -675,6 +716,42 @@
   </div>
 </section>
 
+<!-- CREDENTIALS -->
+<section class="credentials" id="credentials">
+  <p class="section-label reveal">Background</p>
+  <h2 class="section-title reveal">Experience &amp; <em>credentials</em></h2>
+  <div class="divider reveal"></div>
+  <div class="credentials-grid">
+    <div class="credentials-group reveal">
+      <h3>Corporate Experience</h3>
+      <ul class="credentials-list">
+        <li>KPMG</li>
+        <li>PwC</li>
+        <li>UBS</li>
+        <li>Accenture</li>
+      </ul>
+    </div>
+    <div class="credentials-group reveal">
+      <h3>Sample Clients</h3>
+      <ul class="credentials-list">
+        <li>Morgan Stanley</li>
+        <li>Wells Fargo</li>
+        <li>DTCC</li>
+        <li>Barclays</li>
+        <li>HSBC</li>
+      </ul>
+    </div>
+    <div class="credentials-group reveal">
+      <h3>Education &amp; Certifications</h3>
+      <ul class="credentials-list">
+        <li>BBA · Emory University<span>Accounting &amp; Finance</span></li>
+        <li>MA · Columbia University<span>Social-Organizational Psychology</span></li>
+        <li>F.E.C.I. Executive Coaching Certification<span>Columbia University</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
 <!-- TESTIMONIALS -->
 <section class="testimonials" id="testimonials">
   <p class="section-label reveal">Client Feedback</p>
@@ -688,18 +765,20 @@
     </div>
     <div class="testimonial-card reveal">
       <span class="testimonial-quote-mark">"</span>
-      <p class="testimonial-text">Jenna has been one of the most impactful people in my professional journey. Over the years she mentored me, she helped me to grow into a more confident leader, someone who can walk into any room, present to senior stakeholders and hold my own. What sets Jenna apart is that she doesn't just tell you what to improve but she shows you how. Her coaching pushed me to think more strategically and with greater forward vision, often by asking exactly the right questions that got my own mind working in ways I hadn't before. If you are looking for a coach who will invest in you, challenge you with honesty, and equip you with the tools to actually grow, Jenna is that person.</p>
-      <span class="testimonial-attribution">Senior Manager · Accenture</span>
+      <p class="testimonial-text">I've worked with Jenna for many years and have seen firsthand her unique ability to cut through complexity and synthesize situations down to an actionable and clear path forward. She has a unique insight into corporate dynamics that is grounded in both a deep understanding of humans and human behavior, together with practical experience with how organizations actually work. Unlike coaches who operate on the surface level and rely on asking you questions to figure out what you already know, Jenna brings her own substantial experience and strategic thinking to offer you perspectives and ideas that you simply couldn't have found elsewhere. If you're looking for a thought partner who can help you pave new pathways in your understanding and turn those into pragmatic actions that materialize into positive change — Jenna is the one!</p>
+      <span class="testimonial-attribution">Chief Client Officer · Market Infrastructure Provider</span>
     </div>
     <div class="testimonial-card reveal">
       <span class="testimonial-quote-mark">"</span>
       <p class="testimonial-text">Jenna's enthusiasm is contagious, she has the unique ability to help me identify the things that matter and how I can focus my energy to do the right thing. Jenna makes it easy to share in confidence, helping me reign my feelings to avoid emotionally imploding or exploding when dealing with stretch assignments.</p>
       <span class="testimonial-attribution">Managing Director, Mainframe Modernization · Kyndryl</span>
     </div>
+  </div>
+  <div class="testimonials-grid-bottom">
     <div class="testimonial-card reveal">
       <span class="testimonial-quote-mark">"</span>
-      <p class="testimonial-text">Your client quote goes here. Replace this placeholder with the actual feedback you have received from this client.</p>
-      <span class="testimonial-attribution">Client Name · Title, Company</span>
+      <p class="testimonial-text">Jenna has been one of the most impactful people in my career. Over the years she mentored me, she helped me to grow into a more confident leader, someone who can walk into any room, present to senior stakeholders and hold my own. What sets Jenna apart is that she doesn't just tell you what to improve but she shows you how. Her coaching pushed me to think more strategically and with greater forward vision, often by asking exactly the right questions that got my own mind working in ways I hadn't before. If you are looking for a coach who will invest in you, challenge you with honesty, and equip you with the tools to actually grow, Jenna is that person.</p>
+      <span class="testimonial-attribution">Senior Manager · Accenture</span>
     </div>
     <div class="testimonial-card reveal">
       <span class="testimonial-quote-mark">"</span>
@@ -719,11 +798,11 @@
     <div class="contact-detail reveal">
       <div class="contact-item">
         <span class="contact-item-label">Format</span>
-        <span>60-minute introductory call, no charge</span>
+        <span>30-minute introductory call, no charge</span>
       </div>
       <div class="contact-item">
         <span class="contact-item-label">Response</span>
-        <span>Within one business day</span>
+        <span>Within 2 business days</span>
       </div>
       <div class="contact-item">
         <span class="contact-item-label">Location</span>

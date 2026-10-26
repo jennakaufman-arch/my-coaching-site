@@ -354,6 +354,24 @@
     color: var(--ink);
   }
 
+  /* INSIGHTS */
+  .insights { background: var(--white); }
+  .insight-card {
+    display: grid; grid-template-columns: 1.4fr 1fr; gap: 3rem; align-items: center;
+    margin-top: 3rem; background: var(--cream); padding: 2.5rem;
+    border-top: 2px solid var(--gold); text-decoration: none; color: inherit;
+    transition: transform 0.2s;
+  }
+  .insight-card:hover { transform: translateY(-3px); }
+  .insight-card h3 { font-family: var(--serif); font-size: 2.2rem; font-weight: 300; line-height: 1.1; margin-bottom: 0.6rem; }
+  .insight-card h3 em { font-style: italic; color: var(--gold); }
+  .insight-dek { font-family: var(--serif); font-style: italic; font-size: 1.2rem; color: var(--ink-mid); margin-bottom: 1rem; line-height: 1.4; }
+  .insight-card p.insight-body { font-size: 0.92rem; line-height: 1.7; color: var(--ink-light); }
+  .insight-meta { font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.9rem; }
+  .insight-side { border-left: 1px solid var(--gold-light); padding-left: 2rem; }
+  .insight-side blockquote { font-family: var(--serif); font-size: 1.25rem; line-height: 1.45; color: var(--ink); margin-bottom: 1.5rem; }
+  .insight-link { font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink); border-bottom: 1px solid var(--gold); padding-bottom: 2px; }
+
   /* VALUE */
   .value {
     background: var(--ink);
@@ -622,6 +640,8 @@
     .hero::before { display: none; }
     section { padding: 4rem 1.5rem; }
     .clients-grid { grid-template-columns: 1fr; }
+    .insight-card { grid-template-columns: 1fr; gap: 1.5rem; padding: 1.75rem; }
+    .insight-side { border-left: none; padding-left: 0; border-top: 1px solid var(--gold-light); padding-top: 1.5rem; }
     .value-pillars { grid-template-columns: 1fr; }
     .credentials-grid { grid-template-columns: 1fr; gap: 2rem; }
     .testimonials-grid,
@@ -638,6 +658,7 @@
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#services">Services</a></li>
+    <li><a href="#insights">Insights</a></li>
     <li><a href="#credentials">Background</a></li>
     <li><a href="#testimonials">Testimonials</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -744,6 +765,25 @@
     </div>
   </div>
   <p class="services-closing reveal">Across every engagement, my clients have a personal advisor and thought partner singularly focused on their success.</p>
+</section>
+
+<!-- INSIGHTS -->
+<section class="insights" id="insights">
+  <p class="section-label reveal">Insights</p>
+  <h2 class="section-title reveal">Point of <em>view</em></h2>
+  <div class="divider reveal"></div>
+  <a class="insight-card reveal" href="silo-tax/">
+    <div>
+      <p class="insight-meta">October 2026 · Leadership Teams · Cost &amp; AI</p>
+      <h3>The <em>silo</em> tax</h3>
+      <p class="insight-dek">Why trust across executive teams belongs on the CEO&rsquo;s cost and AI agenda</p>
+      <p class="insight-body">When leaders lack confidence in their peers, they replicate capabilities to retain control and speed. In the AI era, that tax is rising. Four imperatives for CEOs to build trust across the top team and reduce silos.</p>
+    </div>
+    <div class="insight-side">
+      <blockquote>&ldquo;Duplication is the visible cost of an invisible problem.&rdquo;</blockquote>
+      <span class="insight-link">Read the article &rarr;</span>
+    </div>
+  </a>
 </section>
 
 <!-- CREDENTIALS -->
